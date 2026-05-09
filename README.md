@@ -1,11 +1,35 @@
-<div align="center">
+# 🖋️ Unquote
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+> **Decipher the wisdom of the past, one letter at a time.**
 
-  <h1>Built with AI Studio</h2>
+Unquote is a refined cryptogram experience designed with an archival aesthetic. It challenges you to solve monoalphabetic substitution puzzles featuring some of the most profound quotes in human history.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## ✨ Features
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+- **📜 Archival Aesthetic**: A "Swiss-Editorial" design that respects the gravity of the quotes it presents.
+- **🧠 Expert Scoring**: A custom difficulty algorithm that analyzes letter frequency, entropy, and quote length.
+- **⚡ Advanced Tools**: 
+  - **Substitution Ledger**: Track your decryption progress in real-time.
+  - **Pencil Mode**: Make tentative guesses without committing to the final solution.
+  - **Conflict Detection**: Instant visual feedback when a plain-letter is assigned to multiple ciphers.
+- **📱 Fluid Responsiveness**: Designed to be comfortable on everything from mobile devices to ultra-wide monitors.
+- **🎓 Historical Context**: Verified attributions and context cards for every solved puzzle.
 
-</div>
+## 🕹️ How to Play
+
+1. **Select a Case**: Start with established entry-level cases and work your way up to Expert-level decryption.
+2. **Scan for Patterns**: Look for single-letter words or common three-letter combinations.
+3. **Map the Cipher**: Click a cell and type a letter to assign a substitution. 
+4. **Use Pencil Mode**: Hit `P` or click the Pencil button to mark tentative letters.
+5. **Decipher the Message**: Fill out the grid correctly to unlock the archival card and proceed to the next record.
+
+## 🛠️ Built With
+
+- **Vite & React** (Functional Components + Hooks)
+- **Tailwind CSS** (Editorial Theme)
+- **Motion** (Fluid transitions)
+- **Lucide** (System Icons)
+
+---
+
+*"Every letter hides a secret, every word a legacy."*

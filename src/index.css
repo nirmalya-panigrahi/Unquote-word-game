@@ -1,30 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=JetBrains+Mono:wght@400;700&display=swap');
 @import "tailwindcss";
 
+/*
+  Palette — two tones + one accent.
+  paper : the page
+  ink   : text, lines, and the dark ledger panel (muted shades are just ink at lower opacity)
+  accent: only for what needs your attention — the active cell, matching letters,
+          mistakes/conflicts, progress and the next action.
+*/
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-serif: "Playfair Display", serif;
-  --font-display: "Space Grotesk", sans-serif;
-  --font-mono: "JetBrains Mono", monospace;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
 
-  --color-editorial-bg: #F9F7F2;
-  --color-editorial-sidebar: #F2EFE8;
-  --color-editorial-card: #FAF9F6;
-  --color-editorial-text: #1A1A1A;
-  --color-editorial-muted: #8C887D;
-  --color-editorial-border: #D1CEC5;
+  --breakpoint-xs: 30rem;
+
+  --color-paper: #F4F0E8;
+  --color-ink: #1C1B19;
+  --color-accent: #D8401A;
 }
 
 @layer base {
   body {
-    @apply font-sans bg-editorial-bg text-editorial-text;
+    @apply font-sans bg-paper text-ink antialiased;
   }
-}
-
-.font-display {
-  font-family: var(--font-display);
-}
-
-.font-serif {
-  font-family: var(--font-serif);
+  ::selection {
+    @apply bg-accent text-paper;
+  }
 }
